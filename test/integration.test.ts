@@ -6,7 +6,7 @@ import request from 'supertest';
 // test that server is running
 describe('GET /', () => {
   it('should return 200 OK', async () => {
-    await request(app).get('/').expect(200);
+    await request(app).get('/api/v1').expect(200);
   });
 });
 
