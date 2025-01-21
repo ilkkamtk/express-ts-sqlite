@@ -4,9 +4,9 @@ import request from 'supertest';
 // import randomstring from 'randomstring';
 
 // test that server is running
-describe('GET /', () => {
+describe('GET /api/v1', () => {
   it('should return 200 OK', async () => {
-    await request(app).get('/api/v1').expect(200);
+    await request(app).get('/').expect(200);
   });
 });
 
@@ -205,4 +205,5 @@ describe('Delete test data', () => {
     await request(app).delete(`/api/v1/authors/${author.id}`).expect(204);
   });
 });
+
 TODO: Remove this line to start the integration tests */
